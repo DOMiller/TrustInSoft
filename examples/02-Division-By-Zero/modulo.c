@@ -14,13 +14,13 @@ int main(void)
   int i;
   int n = 0;
 
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i < 5; i++) {
     /* The analyzer will iterate on the elements of the array, until
        reaching the value 0.
 
        Calling the function 'modulo' by setting the parameter 'b' to 0
        will raise an alarm. */
-    n += modulo(100, array[i]);
+    n += modulo(100, array[i]?array[i]:i);
   }
 
   return 0;
