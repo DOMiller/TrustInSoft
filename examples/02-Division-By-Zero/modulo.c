@@ -5,6 +5,7 @@
    to do a division/modulo operator if the value of the second operand is 0. */
 int modulo(int a, int b)
 {
+  if (b==0) return 0;
   return a % b;
 }
 
