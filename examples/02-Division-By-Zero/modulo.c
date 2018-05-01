@@ -10,7 +10,7 @@ int modulo(int a, int b)
 
 int main(void)
 {
-  int array[5] = {13, 7, 42, 0, 1};
+  int array[5] = {0, 7, 42, 13, 1};
   int i;
   int n = 0;
 
